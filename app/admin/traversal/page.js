@@ -20,13 +20,13 @@ export default function TraversalPage() {
   }
 
   return (
-    <main className="p-6 max-w-xl mx-auto">
+    <main className="w-full flex flex-col items-center justify-start  p-4">
       <h1 className="text-2xl font-bold mb-2">📂 Path Traversal Playground</h1>
       <p className="mb-4 text-sm text-gray-400">
         Current Dir: <code>/vuln/{cwd}</code>
       </p>
 
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-4 w-full">
         <input
           className="w-full p-2 border rounded"
           placeholder="e.g. ls, cat file.txt, cd folder"
@@ -41,7 +41,7 @@ export default function TraversalPage() {
         </button>
       </form>
 
-      <pre className="mt-6 bg-black text-green-400 p-4 rounded overflow-x-auto whitespace-pre-wrap">
+      <pre className="mt-6 bg-black text-green-400 p-4 rounded overflow-x-auto whitespace-pre-wrap w-full">
         {result}
       </pre>
     </main>

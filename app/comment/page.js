@@ -27,10 +27,10 @@ export default function CommentPage() {
   }
 
   return (
-    <main className="p-6 max-w-xl mx-auto">
+    <main className="w-full flex flex-col items-center justify-start p-4">
       <h1 className="text-2xl font-bold mb-4">🗣️ Drop a Comment</h1>
 
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-4 w-full">
         <div>
           <label className="block font-medium">Your Name</label>
           <input

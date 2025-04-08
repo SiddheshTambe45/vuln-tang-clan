@@ -25,10 +25,10 @@ export default function LoginPage() {
   }
 
   return (
-    <main className="p-6 max-w-sm mx-auto">
+    <main className="w-full flex flex-col items-center justify-start  p-4">
       <h1 className="text-2xl font-bold mb-4">🔐 Login to VulnTang</h1>
 
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-4 w-full">
         <div>
           <label className="block font-medium">Username</label>
           <input

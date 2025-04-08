@@ -8,6 +8,12 @@ export default function AdminLogsPage() {
     fetch("/api/logs")
       .then((res) => res.json())
       .then((data) => setLogs(data.logs || []));
+
+    fetch("/api/flags/logs")
+      .then((res) => res.json())
+      .then((data) => {
+        // Don't show it anywhere — silent drop
+      });
   }, []);
 
   return (
