@@ -19,6 +19,10 @@ export default function HomePage() {
         Welcome to the most insecure app on the planet. Feel free to leave your
         mark below.
       </p>
+      <p className="mb-4 text-gray-600">
+        Welcome to the most insecure app on the planet. Feel free to leave your
+        mark below.
+      </p>
 
       <div className="flex flex-row items-center justify-between w-full">
         <button
