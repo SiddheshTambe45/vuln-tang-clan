@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 export default function HomePage() {
   const router = useRouter();
   const [comments, setComments] = useState([]);
+  //hi for some other stuff
 
   useEffect(() => {
     fetch("/api/comments")
